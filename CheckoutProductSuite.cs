@@ -12,7 +12,7 @@ namespace Automation.SwagLabsNET.Test
     {
         IPage _page;
 
-        [SetUp]
+        [OneTimeSetUp]
         public async Task Setup()
         {
             _page = await GetPage.GetWebPage();
@@ -24,7 +24,7 @@ namespace Automation.SwagLabsNET.Test
             Assert.Pass();
         }
 
-        [TearDown]
+        [OneTimeTearDown]
         public async Task TearDown()
         {
             await _page.CloseAsync();
