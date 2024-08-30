@@ -34,6 +34,7 @@ namespace Automation.SwagLabsNET.Test
 
             await page.ClickbuttonByLocatorAsync(LoginConstants.LogInButtonId);
 
+
             return page;
         }
     }
